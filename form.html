@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .image-container {
+        text-align: center;
+    }
+    .image-container img {
+        max-width: 100%;
+        max-height:400 px;
+        height: auto;
+     
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-container">
+        <img src="vacation.jpg" alt="Travel Image">
+    </div>
+    <h2>Travel Form</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" name="persons" required>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
